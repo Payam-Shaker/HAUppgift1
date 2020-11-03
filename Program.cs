@@ -11,6 +11,8 @@ namespace InlamningsUppgift1
         static void Main(string[] args)
         {
             Console.WriteLine("fuck github!");
+            Console.WriteLine("we are on github!");
+
         }
     }
 }
