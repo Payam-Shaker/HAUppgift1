@@ -12,12 +12,9 @@ namespace InlamningsUppgift1
         {
 
 
-            int x;
-            int y;
-            int z;
-            string opera1;
-            string opera2;
-            int answer; 
+            int x, y, z;
+            string opera1, opera2;
+            float answer; 
 
             Console.Write("Enter first term: ");
             x = Convert.ToInt32(Console.ReadLine());
@@ -44,19 +41,66 @@ namespace InlamningsUppgift1
             }
             else if (opera1 == "+" && opera2 == "*")
             {
-                answer = z * y + x;
+                answer = x + y * z;
             }
             else if (opera1 == "+" && opera2 == "/")
             {
-                answer = z / y + x;
+                answer = x + y / z;
+            }
+            else if (opera1 == "-" && opera2 == "-")
+            {
+                answer = x - y - z;
+            }
+            else if (opera1 == "-" && opera2 == "+")
+            {
+                answer = x - y + z;
+            }
+            else if (opera1 == "-" && opera2 == "*")
+            {
+                answer = x - y * z;
+            }
+            else if (opera1 == "-" && opera2 == "/")
+            {
+                answer = x - y / z;
+            }
+            else if (opera1 == "*" && opera2 == "+")
+            {
+                answer = x * y + z;
+            }
+            else if (opera1 == "*" && opera2 == "-")
+            {
+                answer = x * y - z;
+            }
+            else if (opera1 == "*" && opera2 == "*")
+            {
+                answer = x * y * z;
+            }
+            else if (opera1 == "*" && opera2 == "/")
+            {
+                answer = x * y / z;
+            }
+            else if (opera1 == "/" && opera2 == "+")
+            {
+                answer = x / y + z;
+            }
+            else if (opera1 == "/" && opera2 == "-")
+            {
+                answer = x / y - z;
+            }
+            else if (opera1 == "/" && opera2 == "*")
+            {
+                answer = x / y * z;
+            }
+            else if (opera1 == "/" && opera2 == "/")
+            {
+                answer = x / y / z;
             }
             else
             {
                 answer = 0;
             }
 
-
-            Console.WriteLine(x.ToString() + " " + opera1 + " " + y.ToString() + opera2 + " " + z.ToString() + " = " + answer.ToString());
+            Console.WriteLine(x.ToString() + " " + opera1 + " " + y.ToString() + " " + opera2 + " " + z.ToString() + " = " + answer.ToString());
 
 
 
